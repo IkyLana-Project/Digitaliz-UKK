@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi Page</title>
+    <link rel="stylesheet" href="Transaksi.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul class="navigasi">
+                <li class="nav-item">
+                    <a href="Home Page.html">Home</a>
+                </li>
+                <li class="nav-item" id="transaksi">
+                    <a href="Transaksi.html">Transaksi</a>
+                </li>
+                <li class="nav-item" id="logout">
+                    <a href="Login page.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <h3 style="margin-top: 20px;">Data Transaksi</h3>
+    <main>
+        <div class="datatransaksi" style="margin-top: 20px;">
+            <section>
+                <label for="" style="margin-bottom: 5px;">No Transaksi</label>
+                <input type="text" placeholder="TR-7000">
+            </section>
+            <section>
+                <label for="" style="margin-bottom: 5px;">Tanggal</label>
+                <input type="date" name="" id="">
+            </section>
+        </div>
+        <article>
+            <label for="" style="margin-bottom: 5px;">Nama</label>
+            <input type="text" placeholder="Nama Mobil">
+            <label for="" style="margin-bottom: 5px;">Paket</label>
+            <input type="text" placeholder="Mobil Sedang">
+            <label for="" style="margin-bottom: 5px;">Harga</label>
+            <input type="text" placeholder="Rp. 85.000">
+        </article>
+    </main>
+
+    <h3>Paket Tambahan</h3>
+    <div class="pakettambahan" style="margin-top: 20px; margin-bottom: 20px;">
+        <input type="checkbox">
+        <label for="">Tidak Ada Tambahan</label>
+        <input type="checkbox">
+        <label for="">WAX (10.000)</label>
+        <input type="checkbox">
+        <label for="">Fogging (20.000)</label>
+    </div>
+
+    <h3>Total Transaksi</h3>
+    <div class="totaltransaksi" style="margin-top: 20px;">
+        <section>
+            <label for="" style="margin-bottom: 5px;">Total Harga</label>
+            <input type="text" placeholder="Rp.0">
+        </section>
+        <section>
+            <label for="" style="margin-bottom: 5px;">Pembayaran</label>
+            <input type="text" placeholder="Rp.0">
+        </section>
+        <section>
+            <label for="" style="margin-bottom: 5px;">Kembalian</label>
+            <input type="text" placeholder="Rp.0">
+        </section>
+    </div>
+    <button onclick="displayalert()" type="submit" style="cursor: pointer;">Simpan Transaksi</button>
+<footer class="footer">
+        <p>Copyright (c) Muhammad Rizky Maulana, Rabu-22-11-2023</p>
+</footer>
+<script>
+    function displayalert(){
+        alert("Anda Telah Berhasil Melakukan Transaksi!");
+    }
+</script>
+</body>
+</html>
